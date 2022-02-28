@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.clear{
+    clear: both;
+}
+#header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0,0, 0,16%);
+}
+.nav{
+    position: relative;
+    margin: 0 32px;
+    letter-spacing: 3.4px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav a{
+    color: #000;
+    text-decoration: none;
+}
+.nav li{
+    list-style-type: none;
+}
+.nav .nav-right{
+    margin: 5px;
+    display: flex;
+}
+.nav .nav-right li a{
+    line-height: 45px;
+    padding: 5px 16px;
+}
+.nav .nav-left {
+    margin:3px 0;
+    line-height: 36px;
+    padding: 4px 16px;
+}
+
+.nav .nav-left:hover,
+.nav .nav-right li:hover  {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+.slider{
+    position: relative;
+   margin-top: 55px;
+    padding-top: 50%;
+    background: url(/picture/architect.jpg) no-repeat center /cover;
+    
+  
+}
+.slider a{
+    text-decoration: none;
+    color: #fff;
+}
+.slider .slider-text{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3.4px;
+}
+.slider .slider-text b{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+}
+.slider .slider-text a {
+    letter-spacing: 5px;
+}
+#content{
+    padding: 8px 16px;
+}
+#content .project-mention{
+    margin: 16px 0;
+}
+#content .title-mention{
+    font-size: 24px;
+    padding: 16px 0;
+    letter-spacing: 2.4px;
+    border-bottom: ridge 1px;
+    margin: 32px ;
+}
+#content .div-project{
+    display: flex;
+  padding: 0 8px;
+  justify-content: space-between;
+}
+#content .list-project{
+    width: 24%;
+    position: relative;
+   margin-bottom: 8px;
+   
+}
+#content .img-project{
+    width: 100%;
+}
+#content .list-project .text-description{
+    position: absolute;
+    top: 0;
+    padding: 12px 8px;
+    background-color: #000;
+    color: #fff;
+}
+
+#content .about-mention .text-about{
+    text-align: justify;
+    padding: 0 16px;
+    font-size: 15px;
+    line-height: 1.6;    
+    word-spacing: 1.4px;
+    margin-bottom: 50px;
+}
+#content .list-mentor{
+    width: 25%;
+    float: left;
+    padding: 0 8px;
+    border: solid 1px #ccc;
+}
+#content .list-mentor .img-mentor{
+    width: 100%;
+}
+#content .list-mentor .name-mentor{
+    margin: 10px 10px;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#content .list-mentor .position-mentor{
+    opacity: 0.6;
+    margin: 15px 10px;
+}
+#content .list-mentor .about-mentor{
+    margin: 15px 10px;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 15px;
+}
+#content .list-mentor .contact-mentor{
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #000;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+#content .contact-mentor:hover{
+    background-color: #ccc;
+}
+
+#content .contact-mention .text-contact{
+    margin: 15px 15px;
+    
+}
+       /* Xay dung modal */
+.modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: showModal ease 0.5s;
+}
+.modal.hide{
+    display: flex;
+}
+.modal-container{
+  background-color: #fff;
+  width: 900px;
+  height: 400px;
+  position: relative;
+}
+.close-modal{
+  position: absolute;
+  right: 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #fff;
+}
+.modal .close-modal:hover{
+    background-color: #f44336;
+}
+.modal .modal-header{
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #009688;
+    letter-spacing: 5px;
+}
+.modal .modal-content{
+    margin: 10px 16px;
+    font-size: 15px;
+}
+.modal .modal-label {
+    display: block;
+    color: #000;
+}
+.modal .modal-input{
+    padding: 8px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.modal-footer{
+    margin: 0 16px;
+}
+.send-modal{
+
+   width: 100%;
+   height: 50px;
+   cursor: pointer;
+   margin: 16px 0;
+   background-color: #009688;
+   color: #fff;
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 500;
+   border-radius: 4.5px;
+   border: 1px solid #009688;
+   
+}
+  /* amination modal */
+  @keyframes showModal{
+      from {
+          opacity: 0;
+            transform: translateY(-150px);  
+      } 
+      to {
+            opacity: 1;
+            transform: translateY(0);
+      }
+  }
