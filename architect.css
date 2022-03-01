@@ -55,7 +55,7 @@ html{
     position: relative;
    margin-top: 55px;
     padding-top: 50%;
-    background: url(/picture/architect.jpg) no-repeat center /cover;
+    background: url(./picture/architect.jpg) no-repeat center /cover;
     
   
 }
